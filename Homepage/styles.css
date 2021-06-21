@@ -1,0 +1,61 @@
+body {
+    color: white;      /* set text color to white */
+    background-image: linear-gradient(rgba(0,0,0,0.527) ,rgba(0,0,0,0.5)),url(img.jpg);
+    font-family: 'Poppins', sans-serif;
+}
+
+header div {
+    margin-top: 10px;
+    float: left;              /* element floats to left of its container */
+}
+
+nav {
+    float: right;
+}
+
+img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+nav ul {
+    list-style: none;
+    text-align: right;
+    margin-right: 50px;
+}
+
+nav ul li {
+    display: inline-block;           /* characteristics of block, but sits on a line */
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+header+div {
+    clear: both;
+    text-align: center;
+    padding: 200px;
+    line-height: 50px;
+    }
+
+/*  adjacent-sibling-selector */
+h1+a {
+    color: white;                  
+    border: solid white thin;         
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* this code is designed to change properties of elements when mouse pointer
+    hovers over them.  */
+a:hover {
+    background-color: white;     
+    border: solid white thin;
+    padding: 10px;
+    color: black;        
+}

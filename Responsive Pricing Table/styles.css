@@ -1,0 +1,133 @@
+body {
+	background: #FEDD2A;           
+	padding: 80px 0;
+	margin-left: 140px;
+}
+.box {
+	padding-bottom: 25px;
+    width: 25%;
+    float: left;
+    margin-left: 40px;
+	background: #fff;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+	transition: all 0.3s ease-in-out;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+}
+ a {
+	background: darkorchid;
+	color: #fff;;
+	padding: 15px 30px;
+	text-decoration: none;
+	border-radius: 25px;
+	display: inline-block;
+}
+/* this code is designed to change properties of elements when mouse pointer
+    hovers over them.  */
+.box:hover {
+	cursor: pointer;
+	box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.1);
+	transform: scale(1.04);
+}
+.box::before {
+	content: "";
+	width: 100%;
+	height: 350px;
+	background: darkorchid;
+	position: absolute;
+	top: -150px;
+	left: 0;
+	transform: skewY(-20deg);
+}
+ h3 {
+	padding: 20px 20px 60px;
+	text-align: left;                   /* element floats to left of its container */
+	position: relative;
+	font-size: 30px;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;          /* set text to uppercase */
+	margin: 0;
+}
+
+h3+div {
+	display: inline-block;
+	width: 140px;
+	height: 110px;
+	padding: 15px;
+	border-top: none;
+	border-bottom: none;
+	position: relative;
+}
+.value {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	border: 5px solid #262626;
+	border-top: none;
+	border-bottom: none;
+	z-index: 1;
+	position: relative;
+}
+ .value::before,.value::after {
+	content: "";
+	width: 97px;
+	height: 97px;
+	background: #fff;
+	border: 5px solid #262626;
+	border-bottom: none;
+	border-right: none;
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	z-index: -1;
+	transform: translateX(-50%) scaleY(0.5) rotate(45deg);
+}
+ .value::after {
+	border-right: 5px solid #262626;
+	border-bottom: 5px solid #262626;
+	border-top: none;
+	border-left: none;
+	top: auto;
+	bottom: -50px;
+}
+ .currency {
+	display: inline-block;
+	font-size: 30px;
+	margin-top: 7px;
+	vertical-align: top;
+}
+ .amount {
+	display: inline-block;
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 65px;
+}
+ .amount span {
+	display: inline-block;                   /* characteristics of block, but sits on a line */
+	margin-top: 10px;      
+	font-size: 30px;
+	font-weight: normal;
+	vertical-align: top;
+	margin-top: -7px;
+}
+ .month {
+	display: block;
+	font-size: 16px;
+	line-height: 0;
+}
+ ul {
+	padding: 70px 0 0 0;
+	margin-bottom: 20px;
+	list-style: none;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+}
+ ul li {
+	padding: 7px 0;
+	font-size: 16px;
+	color: #808080;
+	position: relative;
+}
+

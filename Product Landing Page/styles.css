@@ -1,0 +1,69 @@
+
+    body{
+    color: midnightblue;
+    }  
+
+    header {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10%;
+    }
+
+    .top {
+        margin-top: 15px;
+    }
+    /* 
+    url() ---> provide file path to image and it will show up as background
+    */
+    .background-image {
+        background-image: url(casper.jpg);      /* set image as background */
+        text-align: center;
+        padding: 5px;
+        height: 450px;
+    }
+
+    img {
+    padding: 5px;
+    width: 150px;
+    height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+   .centered {
+       margin-top: 100px;
+       margin-left: 45%;
+       color: white;                        /* set text color to white */
+       background-color: midnightblue;      /* set background color to midnightblue */
+       height: 40px;
+       width: 150px;
+       border-radius: 5px;
+       line-height: 35px;
+       padding: 5px;
+       }
+
+       .bottom {
+           margin-top: 160px;
+       }
+
+       .text-align {
+           text-align: center;                 /* set text to center */
+       }
+       .inline-block {
+           display: inline-block;
+           height: 200px;
+           width: 300px;
+       }
+
+    footer {
+    background-color: black;                /* set background color to black */
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
